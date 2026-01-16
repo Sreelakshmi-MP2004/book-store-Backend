@@ -152,8 +152,8 @@ exports.buyBook = async (req, res) => {
         ];
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
-            success_url: 'https://bookstore-frontend-design-only-pi.vercel.app/payment-success',
-            cancel_url: 'https://bookstore-frontend-design-only-pi.vercel.app/payment-error',
+            success_url: 'https://bookstore-frontend-design-only-xwnu.vercel.app/payment-success',
+            cancel_url: 'https://bookstore-frontend-design-only-xwnu.vercel.app/payment-error',
             line_items,
             mode: 'payment',
         });
